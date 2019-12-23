@@ -1,4 +1,6 @@
 import React from 'react';
+import downloadCV from '../../assets/img/cv_pdf.png'
+// import downloadCV2 from '../../assets/img/cv_pdf2.png'
 
 const About = ({data}) => {
    if(data){
@@ -11,7 +13,7 @@ const About = ({data}) => {
       var zip = data.address.zip;
       var phone= data.phone;
       var email = data.email;
-      var resumeDownload = data.resumedownload;
+      // var resumeDownload = data.resumedownload;
       var hobby = data.hobby.map(hobby => {
          return( <li key={hobby.title}>{hobby.title}</li>)
       })
@@ -37,15 +39,20 @@ const About = ({data}) => {
                         <span>{email}</span>
                      </p>
                   </div>
-                  <div className="columns download">
+                  <div className="columns hobby">
+                     <h2>My Hobbies</h2>
                      <p>
-                        <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Download Resume</a>
+                        {hobby}
                      </p>
                   </div>
-               </div>
-               <h2>My Hobbies</h2>
-               <div>
-                  {hobby}
+                  <div className="columns download">
+                     <h2>Curriculum Vitae</h2>
+                     <p>
+                        {/* <a rel="noopener noreferrer" target="_blank" href='https://qrco.de/airjypcvpng' className="button"><i className="fa fa-picture-o"></i>View Resume</a>
+                        <a rel="noopener noreferrer" target="_blank" href='https://qrco.de/airjypcvpdf' className="button"><i className="fa fa-download"></i>Download [PDF]</a> */}
+                        <a rel="noopener noreferrer" target="_blank" href='https://qrco.de/airjypcvpng'><img className="cv" src={downloadCV} alt="AIR's avatar" /></a>
+                     </p>
+                  </div>
                </div>
             </div>
          </div>

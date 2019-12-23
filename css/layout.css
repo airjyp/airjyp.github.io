@@ -22,6 +22,11 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
+.cv{
+   min-width: 50px;
+   width: 200px;
+}
+
 body { background: #0f0f0f; }
 
 /* ------------------------------------------------------------------ */
@@ -211,13 +216,15 @@ ul#nav li.current a { color: #F06000; }
    height: 150px;
    border-radius: 50%;
 }
-#about .contact-details { width: 41.66667%; }
+#about .contact-details { width: 33.33333%; }
+#about .hobby { width: 33.33333%; }
 #about .download {
-   width: 58.33333%;
-   padding-top: 6px;
+   width: 33.33333%;
+   /* padding-top: 6px; */
 }
 #about .main-col { padding-right: 5%; }
 #about .download .button {
+   width: 100%;
    margin-top: 6px;
    background: #444;
 }
