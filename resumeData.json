@@ -4,6 +4,14 @@
     "description":"Hi! My name is Achmad Ismail Rivaldi. I just graduated as a Bachelor's Degree of Computer Sciences at IPB University.",
     "image":"avatar.jpg",
     "bio":"My name is Achmad Ismail Rivaldi. I just graduated as a Bachelor's Degree of Computer Sciences at IPB University. I have experience since 2017 as Android developer and frontend since I did various project during college. My skills are Flutter, PHP, Laravel, MySQL, and good at communication and teamwork. Always eager to learn new things from anyone.",
+    "hobby": [
+      {"title":"Reading"},
+      {"title":"Swimming"},
+      {"title":"Cycling"},
+      {"title":"Sing and playing music"},
+      {"title":"Playing games"},
+      {"title":"Sport, such as: Badminton, Basketball"}
+    ],
     "contactmessage":"Write your message here to get in contact with me.",
     "email": "rivaldi@qmail.id",
     "phone": "(+62) 85155020290",

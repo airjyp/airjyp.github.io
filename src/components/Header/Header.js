@@ -29,9 +29,7 @@ const Header = ({data}) => {
                <h1 className="responsive-headline">Hello, there !</h1>
                <h3><span>{description}</span></h3>
                <hr />
-               <ul className="social">
-                  {networks}
-               </ul>
+               <ul className="social"> {networks} </ul>
             </div>
          </div>
          <p className="scrolldown">

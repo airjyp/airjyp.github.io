@@ -12,6 +12,9 @@ const About = ({data}) => {
       var phone= data.phone;
       var email = data.email;
       var resumeDownload = data.resumedownload;
+      var hobby = data.hobby.map(hobby => {
+         return( <li key={hobby.title}>{hobby.title}</li>)
+      })
    }
    return (
       <section id="about">
@@ -39,6 +42,10 @@ const About = ({data}) => {
                         <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Download Resume</a>
                      </p>
                   </div>
+               </div>
+               <h2>My Hobbies</h2>
+               <div>
+                  {hobby}
                </div>
             </div>
          </div>
