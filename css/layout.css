@@ -23,8 +23,8 @@
 /* ------------------------------------------------------------------ */
 
 .cv{
-   min-width: 50px;
    width: 100%;
+   position: relative;
 }
 
 body { background: #0f0f0f; }

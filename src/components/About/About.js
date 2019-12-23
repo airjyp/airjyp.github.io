@@ -50,7 +50,7 @@ const About = ({data}) => {
                      <p>
                         {/* <a rel="noopener noreferrer" target="_blank" href='https://qrco.de/airjypcvpng' className="button"><i className="fa fa-picture-o"></i>View Resume</a>
                         <a rel="noopener noreferrer" target="_blank" href='https://qrco.de/airjypcvpdf' className="button"><i className="fa fa-download"></i>Download [PDF]</a> */}
-                        <a rel="noopener noreferrer" target="_blank" href='https://qrco.de/airjypcvpng'><img className="cv" src={downloadCV} alt="AIR's avatar" /></a>
+                        <a rel="noopener noreferrer" target="_blank" href='https://qrco.de/airjypcvpng'><img className="cv" src={downloadCV} alt="AIR's cv" /></a>
                      </p>
                   </div>
                </div>
