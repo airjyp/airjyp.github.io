@@ -3,7 +3,7 @@ import ReactGA from 'react-ga';
 import $ from 'jquery';
 import Header from './components/Header/Header';
 import About from './components/About/About';
-import Contact from './components/Contact/Contact';
+// import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Resume from './components/Resume/Resume';
 // import Portofolio from './components/Portofolio/Portfolio';
@@ -45,7 +45,7 @@ class App extends Component {
         <Resume data={resumeData.resume}/>
         {/* <Portofolio data={resumeData.portfolio}/>
         <Testimonials data={resumeData.testimonials}/> */}
-        <Contact data={resumeData.main}/>
+        {/* <Contact data={resumeData.main}/> */}
         <Footer data={resumeData.main}/>
       </div>
     );
