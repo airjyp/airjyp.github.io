@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Contact = ({data}) => {
+const Contact = (props) => {
+   const {data} = props;
    if(data){
       var name = data.name;
       var street = data.address.street;

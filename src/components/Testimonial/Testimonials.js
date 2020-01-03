@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Testimonials = ({data}) => {
+const Testimonials = (props) => {
+   const {data} = props;
    if(data){
       var testimonials = data.testimonials.map(testimonials => {
         return  <li key={testimonials.user}>

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Resume = ({data}) => {
+const Resume = (props) => {
+  const {data} = props;
   if(data){
-    // var skillmessage = data.skillmessage;
     var education = data.education.map(education => {
       return <div key={education.school}><h3>{education.school}</h3>
       <p className="info">{education.degree} <span>&bull;</span><em className="date">{education.graduated}</em></p>
@@ -21,8 +21,16 @@ const Resume = ({data}) => {
       </div>
     })
     var skills = data.skills.map(skills => {
-      var className = 'bar-expand '+skills.name.toLowerCase();
-      return <li key={skills.name}><span style={{width:skills.level}}className={className}></span><em>{skills.name}</em></li>
+      return(
+        <div key={skills.name} style={{display: "inline-block", width: "25%"}}>
+          <div style={{marginBottom: 15}}>
+            <img style={{borderRadius: "50%", backgroundColor: "rgba(0,0,0,0.0"}} src={skills.img} alt={skills.name} />
+          </div>
+          <div style={{backgroundColor: "rgba(0,0,0,0.01"}}>
+            <p style={{textAlign: 'center', fontWeight: 'bold'}}>{skills.name}</p>
+          </div>
+        </div>
+      ) 
     })
     var achievements = data.achievements.map(achievements => {
       return <div key={achievements.role}><h3>{achievements.role}</h3>
@@ -72,16 +80,21 @@ const Resume = ({data}) => {
         <div className="three columns header-col">
             <h1><span>Skills</span></h1>
         </div>
-        <div className="nine columns main-col">
-            {/* <p>{skillmessage}
-            </p> */}
-          <div className="bars">
-            <ul className="skills">
-              {skills}
-            </ul>
+      </div>
+      <div className="row">
+        <div style={{paddingTop: 50, paddingBottom: 50}}>
+          <div style={{display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap'}}>
+            {skills}
           </div>
         </div>
       </div>
+      {/* <div className="nine columns main-col">
+        <div className="bars">
+          <ul className="skills">
+            {skills}
+          </ul>
+        </div>
+      </div> */}
     </section>
   );
 }

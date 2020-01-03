@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Footer = ({data}) => {
+const Footer = (props) => {
+  const {data} = props;
   if(data){
     var networks= data.social.map(network => {
       return <li key={network.name}><a href={network.url} rel="noopener noreferrer" target="_blank"><i className={network.className}></i></a></li>

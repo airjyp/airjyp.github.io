@@ -122,39 +122,48 @@
     "skills":[
       {
         "name":"HTML",
-        "level":"80%"
+        "level":"80%",
+        "img":"images/html.png"
       },
       {
         "name":"CSS",
-        "level":"85%"
+        "level":"85%",
+        "img":"images/css.png"
       },
       {
         "name":"JavaScript",
-        "level":"70%"
+        "level":"70%",
+        "img":"images/js.png"
       },
       {
         "name":"React",
-        "level":"70%"
+        "level":"70%",
+        "img":"images/react.png"
       },
       {
         "name":"Flutter",
-        "level":"80%"
+        "level":"80%",
+        "img":"images/flutter.png"
       },
       {
         "name":"Laravel",
-        "level":"80%"
+        "level":"80%",
+        "img":"images/laravel.png"
       },
       {
         "name":"MySQL",
-        "level":"85%"
+        "level":"85%",
+        "img":"images/mysql.png"
       },
       {
         "name":"PHP",
-        "level":"80%"
+        "level":"80%",
+        "img":"images/php.png"
       },
       {
         "name":"Photoshop",
-        "level":"70%"
+        "level":"70%",
+        "img":"images/ps.png"
       }
     ],
     "achievements":[

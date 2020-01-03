@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Header = ({data}) => {
+const Header = (props) => {
+   const {data} = props;
    if(data){
       // var name = data.name;
       // var occupation= data.occupation;
