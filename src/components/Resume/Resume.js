@@ -22,12 +22,12 @@ const Resume = (props) => {
     })
     var skills = data.skills.map(skills => {
       return(
-        <div key={skills.name} style={{display: "inline-block", width: "25%"}}>
+        <div key={skills.name}>
           <div style={{marginBottom: 15}}>
             <img style={{borderRadius: "50%", backgroundColor: "rgba(0,0,0,0.0"}} src={skills.img} alt={skills.name} />
-          </div>
-          <div style={{backgroundColor: "rgba(0,0,0,0.01"}}>
-            <p style={{textAlign: 'center', fontWeight: 'bold'}}>{skills.name}</p>
+            <div style={{backgroundColor: "rgba(0,0,0,0.0"}}>
+              <p style={{textAlign: 'center', fontWeight: 'bold'}}>{skills.name}</p>
+            </div>
           </div>
         </div>
       ) 
@@ -83,7 +83,7 @@ const Resume = (props) => {
       </div>
       <div className="row">
         <div style={{paddingTop: 50, paddingBottom: 50}}>
-          <div style={{display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap'}}>
+          <div style={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
             {skills}
           </div>
         </div>
