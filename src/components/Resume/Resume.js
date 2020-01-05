@@ -22,7 +22,7 @@ const Resume = (props) => {
     })
     var skills = data.skills.map(skills => {
       return(
-        <div key={skills.name}>
+        <div className="image-section" key={skills.name}>
           <div style={{marginBottom: 15}}>
             <img style={{borderRadius: "50%", backgroundColor: "rgba(0,0,0,0.0"}} src={skills.img} alt={skills.name} />
             <div style={{backgroundColor: "rgba(0,0,0,0.0"}}>

@@ -216,10 +216,9 @@ ul#nav li.current a { color: #F06000; }
    height: 150px;
    border-radius: 50%;
 }
-#about .contact-details { width: 33.33333%; }
-#about .hobby { width: 33.33333%; }
-#about .download {
-   width: 33.33333%;
+#about .contact-details { width: 32%; }
+#about .hobby { width: 32%; }
+#about .download { width: 32%;
    /* padding-top: 6px; */
 }
 #about .main-col { padding-right: 5%; }
