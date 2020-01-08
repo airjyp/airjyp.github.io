@@ -1,6 +1,4 @@
 import React from 'react';
-import downloadCV from '../../assets/img/cv_pdf.png'
-// import downloadCV2 from '../../assets/img/cv_pdf2.png'
 
 const About = (props) => {
    const {data} = props;
@@ -48,8 +46,8 @@ const About = (props) => {
                   <div className="columns download">
                      <h2>Curriculum Vitae</h2>
                      <p>
-                        <a rel="noopener noreferrer" target="_blank" href='https://qrco.de/airjypcvpng' className="button"><i className="fa fa-picture-o"></i>View My CV</a>
-                        <a rel="noopener noreferrer" target="_blank" href='https://qrco.de/airjypcvpdf' className="button"><i className="fa fa-download"></i>Download [PDF]</a>
+                        {/* <a rel="noopener noreferrer" target="_blank" href='https://qrco.de/airjypcvpng' className="button"><i className="fa fa-picture-o"></i>View My CV</a> */}
+                        <a rel="noopener noreferrer" target="_blank" href='https://drive.google.com/file/d/11j8sWJ1oVa08YgIXEVDV7jjEJYPoESq7/view?usp=sharing' className="button"><i className="fa fa-download"></i>Download</a>
                         {/* <a rel="noopener noreferrer" target="_blank" href='https://qrco.de/airjypcvpng'><img className="cv" src={downloadCV} alt="AIR's cv" /></a> */}
                      </p>
                   </div>
